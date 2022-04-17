@@ -58,15 +58,6 @@ body{
     font-size: 22px;
 }
 
-.hidden{
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-}
-
 .modal-section{
     position: absolute;
     left: 50%;
@@ -78,6 +69,7 @@ body{
     border-radius: 10px;
     box-sizing: border-box;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    display: none;
 }
 
 .modal-title{
@@ -226,4 +218,14 @@ body{
 
 .sns-kakao::before{
     background-image: url("./images/img_sprites.png");
+}
+
+/* 숨기기 */
+.hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }

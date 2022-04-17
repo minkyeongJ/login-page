@@ -11,7 +11,7 @@
     <section class="login-section">
         <img class="login-logo" src="./images/weniv-logo2.png" alt="">
         <h2 class="login-title">위니브를 더 즐겁고 편리하게 이용하세요.</h2>
-        <a class="login-button" href="">로그인</a>
+        <a class="login-button" href="" onclick="">로그인</a>
     </section>
     <section class="modal-section">
         <p class="modal-close"></p>
@@ -39,5 +39,14 @@
             </section>
         </section>
     </section>
+    <script>
+        var modal = document.querySelector('.modal-section');
+        var loginButton = document.querySelector('.login-section .login-button');
+        var body = document.querySelector('body');
+        loginButton.addEventListener('click', function(){
+            modal.style.display = 'block';
+            body.style.overflow = 'hidden';
+        });
+    </script>
 </body>
 </html>
