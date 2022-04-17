@@ -1,0 +1,119 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* reset */
+h2{
+    font-size: initial;
+    font-weight: initial;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background-color: initial;
+    border: initial;
+}
+
+a{
+    font-style: initial;
+    color: initial;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+/* style */
+body{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-area{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    width: 350px;
+    padding: 15px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.login-title{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.login-button{
+    background-color: #711BFF;
+    width: 100%;
+    clear: both;
+    border-radius: 4px;
+    padding: 10px 0 12px;
+    margin-bottom: 16px;
+}
+
+.login-logo{
+    width: 64px;
+    vertical-align: -3px;
+}
+
+.login-text{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+}
+
+.login-area a{
+    color: #767676;
+    font-size: 12px;
+}
+.find-id{
+    float: left;
+
+}
+
+.find-pw{
+    float: left;
+    margin-left: 4px;
+}
+
+.join{
+    float: right;
+}
+
+.find-id::before{
+    content: '';
+    display: inline-block;
+    background-image: url("./images/icon-lock.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    padding-left: 4px;
+    vertical-align: -3px;
+}
+
+.find-pw::before{
+    content: '';
+    display: inline-block;
+    border-left: 1px solid #767676;
+    width: auto;
+    height: 12px;
+    padding-left: 4px;
+    vertical-align: -1px;
+}
+
+.join::before{
+    content: '';
+    display: inline-block;
+    background-image: url("./images/icon-user.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    padding-left: 4px;
+    vertical-align: -3px;
+}
