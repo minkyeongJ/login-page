@@ -12,6 +12,11 @@
 select{
     border: none;
     appearance: none;
+    outline: none;
+}
+
+select option:checked, select option:hover{
+    border: none;
 }
 
 /* style */
@@ -29,4 +34,17 @@ select{
     border-radius: 10px;
     padding: 12px 14px;
     font-size: 12px;
+    background : url("./images/icon-Triangle-down.png") no-repeat 95% 50%;
+    background-size: 12px 8px;
+    cursor: pointer;
 }
+
+#select-language:focus{
+    border: 1px solid #9B51E0;
+    outline: 3px solid #F8E4FF;
+}
+
+.option-box{
+    border-radius: 10px;
+}
+
