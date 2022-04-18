@@ -19,9 +19,19 @@ input{
     padding: initial;
 }
 
+button{
+    border: initial;
+    background-color: initial;
+}
 /* style */
 body{
     background-color: #F2F2F2;
+}
+
+fieldset{
+    border: initial;
+    margin: 0;
+    padding: 0;
 }
 
 .login-section{
@@ -69,7 +79,7 @@ body{
     border-radius: 10px;
     box-sizing: border-box;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-    display: none;
+    /* display: none; */
 }
 
 .modal-title{
@@ -79,13 +89,16 @@ body{
 } 
 
 .modal-close{
-    float: right;
+    position: absolute;
     background-image: url("./images/close.png");
-    background-size: 16px 16px;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
-    margin: 21px 23px 20px 0;
+    top: 0;
+    right: 0;
+    margin: 22px 24px;
+    cursor: pointer;
 }
 
 .modal-login{
@@ -108,7 +121,20 @@ body{
 }
 
 #login-state{
+    display: none;
+}
 
+#login-state+label::before{
+    content: '';
+    display: inline-block;
+	background-image: url("./images/check-box.png");
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+	cursor: pointer;
+}
+#login-state:checked+label::before{
+    background-image: url("./images/check-box-on.png");
 }
 
 .submit-button{
@@ -201,23 +227,27 @@ body{
     background-size: 84px;
     width: 28px;
     height: 28px;
-    margin-left: 11 px;
+    margin-left: 11px;
 }
 
 .sns-google::before{
     background-image: url("./images/img_sprites.png");
+    
 }
 
 .sns-facebook::before{
     background-image: url("./images/img_sprites.png");
+    background-position-x: 57px;
 }
 
 .sns-naver::before{
     background-image: url("./images/img_sprites.png");
+    background-position-x: 28px;
 }
 
 .sns-kakao::before{
     background-image: url("./images/img_sprites.png");
+    background-position-y: 28px;
 }
 
 /* 숨기기 */
