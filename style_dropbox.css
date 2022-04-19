@@ -9,25 +9,83 @@
 }
 
 /* reset */
-select{
-    border: none;
-    appearance: none;
-    outline: none;
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: initial;
 }
 
-select option:checked, select option:hover{
-    border: none;
+button{
+    border: initial;
+    border-radius: initial;
+    background-color: initial;
+    margin: 0;
+    padding: 0;
+    text-align: initial;
 }
 
 /* style */
-.selectbox-section{
+.select-section{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#select-language{
+.btn-select {
+    width: 200px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    background : url("./images/icon-Triangle-down.png") no-repeat 95% 50%;
+    background-size: 12px 8px;
+}
+
+.btn-select.click{
+    border: 1px solid #9B51E0;
+    outline: 3px solid #F8E4FF;
+    background : url("./images/icon-Triangle-up.png") no-repeat 95% 50%;
+    background-size: 12px 8px;
+}
+
+.list-member {
+    position: absolute;
+    overflow: hidden;
+    outline: 1px solid #C4C4C4;
+    border-radius: 10px;
+    display: none;
+}
+
+.list-member.on {
+    display: block;
+}
+
+.btn-select:active+.list-member {
+    display: block;
+}
+
+.list-member li {
+    width: 200px;
+}
+
+.list-member li button {
+    display: block;
+    width: 184px;
+    background-color: #fff;
+    border-top: none;
+    margin: 8px;
+    padding: 7px 10px 7px;
+    border-radius: 10px;
+}
+
+.list-member li button:hover {
+    background-color: #F8E4FF;
+}
+
+/* #select-language{
     width: 200px;
     height: 40px;
     border: 1px solid #C4C4C4;
@@ -46,5 +104,5 @@ select option:checked, select option:hover{
 
 .option-box{
     border-radius: 10px;
-}
+} */
 
