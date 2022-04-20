@@ -196,7 +196,7 @@ fieldset{
     width: 100%;
     height: 50px;
     margin-top: 10px;
-    padding-top: 14px;
+    padding: 14px 0 14px;
     box-sizing: border-box;
     color: #767676;
 }
@@ -222,32 +222,30 @@ fieldset{
 }
 
 [class^="sns"]::before{
-    float: left;
+    position: absolute;
+    display: flex;
     content: '';
-    background-size: 84px;
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     margin-left: 11px;
+    background-image: url("./images/css_sprites_x2.png");
+    background-size: 28px;
 }
 
 .sns-google::before{
-    background-image: url("./images/img_sprites.png");
-    
+    background-position: -5px -88px;
 }
 
 .sns-facebook::before{
-    background-image: url("./images/img_sprites.png");
-    background-position-x: 57px;
+    background-position: -5px -60px;
 }
 
 .sns-naver::before{
-    background-image: url("./images/img_sprites.png");
-    background-position-x: 28px;
+    background-position: -5px -32px;
 }
 
 .sns-kakao::before{
-    background-image: url("./images/img_sprites.png");
-    background-position-y: 28px;
+    background-position: -5px -5px;
 }
 
 /* 숨기기 */
